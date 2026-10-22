@@ -431,13 +431,13 @@ background:repeating-linear-gradient(#fff 0 calc(1.87rem - 1px),#f3c6df calc(1.8
       return;
     }
     aud.play().then(function(){
-      mb.textContent="Ⅱ Love, Maybe";
+      mb.textContent="Ⅱ Enjoy";
     }).catch(function(){
       mb.textContent="♪ Audio unavailable";
       alert("The song could not play. Please check that the MP3 file is uploaded beside index.html and that its filename matches exactly.");
     });
   });
-  aud.addEventListener("ended",function(){mb.textContent="♪ Love, Maybe";});
+  aud.addEventListener("ended",function(){mb.textContent="♪ Play the Song";});
 
   /* ---- credits ---- */
   $("#big").addEventListener("click",function(){party();setTimeout(party,600);setTimeout(party,1200);});
